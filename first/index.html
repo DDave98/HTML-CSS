@@ -4,14 +4,82 @@
     <!-- toto je komentář -->
     <meta charset="UTF-8">  <!-- nepárový TAG -->
     <title>Document</title> <!-- párový tag -->
+
+    <!-- ikonka -->
+     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./favicon.ico" type="image">
 </head>
 <body>
     <h1>Toto je nadpis 1 urovne</h1>
     <h6>Toto je nadpis 6 urovne</h6>
-    <p>Toto je obsah meho prvniho HTML. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia odio eos enim quo pariatur qui, vel libero cum, at eveniet ducimus blanditiis, itaque cupiditate in repellendus deserunt? Alias, rem.</p>
+    <p>Toto je obsah meho prvniho HTML. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia odio eos enim quo pariatur qui, vel libero cum, at eveniet ducimus blanditiis, itaque cupiditate in repellendus deserunt? Alias, rem.</p>
     <a href="www.seznam.cz">Toto je špatný odkaz na seznam</a>
+
+    <br> <!-- zalomení řádku, běžně se nepoužívá -->
+
     <a href="http://www.seznam.cz">Toto je správný odkaz na seznam</a>
 
+    <br>
+
+    <a href="http://www.seznam.cz" target="_self">Toto je self odkaz na seznam</a>
+
+    <br>
+
+    <a href="http://www.seznam.cz" target="_blank">Toto je blank odkaz na seznam</a>
+
+    <br>
+
+    <a href="mailto:someone@example.com">Send email</a> 
+
+     <br>
+
     <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=" alt="W3Schools.com" width="50%"> 
+
+    <!-- ----------------------------- -->
+
+    <h1>Textové elementy</h1>
+    <!-- též se dneska nepoužívá -> CSS raději -->
+    <b>tučné písmo</b>
+    <strong>Important text</strong>
+    <i> - Italic text </i>
+    <em> - Emphasized text </em>
+    <mark> - Marked text </mark>
+    <small> - Smaller text </small>
+    <del> - Deleted text </del>
+    <ins> - Inserted text </ins>
+    <sub> - Subscript text </sub>
+    <sup> - Superscript text </sup>
+
+
+    <h1>Citace textu</h1>
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote> 
+
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> 
+
+
+    <h1>Pokročilé obrázky</h1>
+    <a href="https://www.w3schools.com/html/html_images_imagemap.asp">více</a>
+
+    <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="Workplace" width="100%" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map> 
+
+    <h1>Pokročilé obrázky #2</h1>
+     <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg">
+    </picture> 
+
+
 </body>
 </html>
