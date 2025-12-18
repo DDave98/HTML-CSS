@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rozcestník</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2.5rem;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    p {
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .links a {
+      text-decoration: none;
+      padding: 0.9rem 1.2rem;
+      border-radius: 10px;
+      background: #ffffff;
+      color: #1e3a8a;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .links a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Vítej 👋</h1>
+    <p>Vyber si, kam chceš pokračovat</p>
+
+    <nav class="links">
+      <a href="/app">Aplikace</a>
+      <a href="/admin">Administrace</a>
+      <a href="/docs">Dokumentace</a>
+    </nav>
+
+    <footer>
+      © 2025 Moje aplikace
+    </footer>
+  </main>
+</body>
+</html>
