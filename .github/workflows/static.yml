@@ -24,7 +24,7 @@ jobs:
           ftp_password: ${{ secrets.FTP_PASSWORD }}
 
           local_source_dir: "first/"
-          dist_target_dir: "www/"
+          dist_target_dir: "web/"
 
           delete: "true"
           exclude: "'^logs/' '^README.md'"
